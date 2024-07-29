@@ -511,6 +511,9 @@ figure.effect-julia:hover p {
     .navbar-expand-lg .navbar-collapse {
         justify-content: flex-end;
     }
+    .invisibleInComputer{
+        display:none;
+    }
 }
 
 @media (max-width: 1200px) {
