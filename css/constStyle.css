@@ -19,36 +19,81 @@ body {
     pointer-events: none; /* Prevent lines from interfering with star clicks */
 }
 
-.star {
-    position: absolute;
-    width: 1vw;
-    height: 1vw;
-    background: white;
-    border-radius: 50%;
-    box-shadow: 0 0 10px white;
-    cursor: pointer;
+@media only screen and (min-width: 768px) {
+    .mobile{
+        display: none;
+    }
+
+    .star {
+        position: absolute;
+        width: 1vw;
+        height: 1vw;
+        background: white;
+        border-radius: 50%;
+        box-shadow: 0 0 10px white;
+        cursor: pointer;
+    }
+
+    /* Updated positions to match the Berserk sacrifice mark precisely */
+    #star1 { top: 9vh; left: 49.5vw; }  /* Top center */
+    #star2 { top: 29vh; left: 41.5vw; }  /* Upper left */
+    #star3 { top: 29vh; left: 57.5vw; }  /* Upper right */
+    #star4 { top: 16vh; left: 54.5vw; }  /* Center */
+    #star5 { top: 64vh; left: 41.5vw; }  /* Lower left */
+    #star6 { top: 64vh; left: 57.5vw; }  /* Lower right */
+    #star7 { top: 79vh; left: 49.5vw; }  /* Bottom center */
+    #star8 { top: 16vh; left: 44.5vw; }  /* Bottom center */
+
+    .star::after {
+        content: attr(title);
+        position: absolute;
+        top: 120%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 18px;
+        white-space: nowrap;
+    }
+
+    .star1::after{
+        top: -120% !important;
+    }
 }
 
-/* Updated positions to match the Berserk sacrifice mark precisely */
-#star1 { top: 9vh; left: 49.5vw; }  /* Top center */
-#star2 { top: 29vh; left: 41.5vw; }  /* Upper left */
-#star3 { top: 29vh; left: 57.5vw; }  /* Upper right */
-#star4 { top: 16vh; left: 54.5vw; }  /* Center */
-#star5 { top: 64vh; left: 41.5vw; }  /* Lower left */
-#star6 { top: 64vh; left: 57.5vw; }  /* Lower right */
-#star7 { top: 79vh; left: 49.5vw; }  /* Bottom center */
-#star8 { top: 16vh; left: 44.5vw; }  /* Bottom center */
+@media only screen and (max-width: 768px) {
+    .pc{
+        display: none;
+    }
+    .star {
+        position: absolute;
+        width: 3vw;
+        height: 2vh;
+        background: white;
+        border-radius: 50%;
+        box-shadow: 0 0 10px white;
+        cursor: pointer;
+    }
 
-.star::after {
-    content: attr(title);
-    position: absolute;
-    top: 120%;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 18px;
-    white-space: nowrap;
-}
+    /* Updated positions to match the Berserk sacrifice mark precisely */
+    #star1 { top: 7vh; left: 49.5vw; }  /* Top center */
+    #star2 { top: 27vh; left: 32.5vw; }  /* Upper left */
+    #star3 { top: 27vh; left: 66.5vw; }  /* Upper right */
+    #star4 { top: 14vh; left: 60.5vw; }  /* Center */
+    #star5 { top: 62vh; left: 32.5vw; }  /* Lower left */
+    #star6 { top: 62vh; left: 66.5vw; }  /* Lower right */
+    #star7 { top: 79vh; left: 49.5vw; }  /* Bottom center */
+    #star8 { top: 14vh; left: 38.5vw; }  /* Bottom center */
 
-.star1::after{
-    top: -120% !important;
+    .star::after {
+        content: attr(title);
+        position: absolute;
+        top: 120%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 18px;
+        white-space: nowrap;
+    }
+
+    .star1::after{
+        top: -120% !important;
+    }
 }
