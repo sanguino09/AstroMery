@@ -33,6 +33,14 @@ body {
         box-shadow: 0 0 10px white;
         cursor: pointer;
     }
+    .starBack {
+        position: absolute;
+        width: 0.3vw;
+        height: 0.3vw;
+        background: white;
+        border-radius: 50%;
+        box-shadow: 0 0 5px white;
+    }
 
     /* Updated positions to match the Berserk sacrifice mark precisely */
     #star1 { top: 9vh; left: 49.5vw; }  /* Top center */
@@ -43,6 +51,59 @@ body {
     #star6 { top: 64vh; left: 57.5vw; }  /* Lower right */
     #star7 { top: 79vh; left: 49.5vw; }  /* Bottom center */
     #star8 { top: 16vh; left: 44.5vw; }  /* Bottom center */
+#star9 { top: 78vh; left: 7vw; }
+#star10 { top: 59vh; left: 22vw; }
+#star11 { top: 34vh; left: 84vw; }
+#star12 { top: 67vh; left: 63vw; }
+#star13 { top: 93vh; left: 82vw; }
+#star14 { top: 9vh; left: 98vw; }
+#star15 { top: 79vh; left: 9vw; }
+#star16 { top: 36vh; left: 48vw; }
+#star17 { top: 56vh; left: 76vw; }
+#star18 { top: 9vh; left: 22vw; }
+#star19 { top: 59vh; left: 57vw; }
+#star20 { top: 85vh; left: 60vw; }
+#star21 { top: 51vh; left: 44vw; }
+#star22 { top: 43vh; left: 17vw; }
+#star23 { top: 14vh; left: 43vw; }
+#star24 { top: 77vh; left: 36vw; }
+#star25 { top: 39vh; left: 75vw; }
+#star26 { top: 51vh; left: 93vw; }
+#star27 { top: 39vh; left: 28vw; }
+#star28 { top: 76vh; left: 74vw; }
+#star29 { top: 38vh; left: 33vw; }
+#star30 { top: 9vh; left: 94vw; }
+#star31 { top: 15vh; left: 47vw; }
+#star32 { top: 16vh; left: 90vw; }
+#star33 { top: 28vh; left: 77vw; }
+#star34 { top: 11vh; left: 62vw; }
+#star35 { top: 63vh; left: 51vw; }
+#star36 { top: 34vh; left: 44vw; }
+#star37 { top: 47vh; left: 90vw; }
+#star38 { top: 72vh; left: 67vw; }
+#star39 { top: 13vh; left: 36vw; }
+#star40 { top: 10vh; left: 44vw; }
+#star41 { top: 50vh; left: 55vw; }
+#star42 { top: 45vh; left: 81vw; }
+#star43 { top: 75vh; left: 41vw; }
+#star44 { top: 2vh; left: 29vw; }
+#star45 { top: 93vh; left: 87vw; }
+#star46 { top: 24vh; left: 15vw; }
+#star47 { top: 49vh; left: 68vw; }
+#star48 { top: 51vh; left: 49vw; }
+#star49 { top: 51vh; left: 70vw; }
+#star50 { top: 52vh; left: 46vw; }
+#star51 { top: 97vh; left: 30vw; }
+#star52 { top: 72vh; left: 73vw; }
+#star53 { top: 25vh; left: 37vw; }
+#star54 { top: 53vh; left: 40vw; }
+#star55 { top: 69vh; left: 84vw; }
+#star56 { top: 70vh; left: 26vw; }
+#star57 { top: 97vh; left: 84vw; }
+#star58 { top: 22vh; left: 96vw; }
+#star59 { top: 77vh; left: 67vw; }
+#star60 { top: 97vh; left: 51vw; }
+
 
     .star::after {
         content: attr(title);
@@ -72,7 +133,14 @@ body {
         box-shadow: 0 0 10px white;
         cursor: pointer;
     }
-
+    .starBack {
+        position: absolute;
+        width: 0.3vw;
+        height: 0.3vw;
+        background: white;
+        border-radius: 50%;
+        box-shadow: 0 0 5px white;
+    }
     /* Updated positions to match the Berserk sacrifice mark precisely */
     #star1 { top: 7vh; left: 49.5vw; }  /* Top center */
     #star2 { top: 27vh; left: 32.5vw; }  /* Upper left */
@@ -82,6 +150,58 @@ body {
     #star6 { top: 62vh; left: 66.5vw; }  /* Lower right */
     #star7 { top: 79vh; left: 49.5vw; }  /* Bottom center */
     #star8 { top: 14vh; left: 38.5vw; }  /* Bottom center */
+    #star9 { top: 78vh; left: 7vw; }
+#star10 { top: 59vh; left: 22vw; }
+#star11 { top: 34vh; left: 84vw; }
+#star12 { top: 67vh; left: 63vw; }
+#star13 { top: 93vh; left: 82vw; }
+#star14 { top: 9vh; left: 98vw; }
+#star15 { top: 79vh; left: 9vw; }
+#star16 { top: 36vh; left: 48vw; }
+#star17 { top: 56vh; left: 76vw; }
+#star18 { top: 9vh; left: 22vw; }
+#star19 { top: 59vh; left: 57vw; }
+#star20 { top: 85vh; left: 60vw; }
+#star21 { top: 51vh; left: 44vw; }
+#star22 { top: 43vh; left: 17vw; }
+#star23 { top: 14vh; left: 43vw; }
+#star24 { top: 77vh; left: 36vw; }
+#star25 { top: 39vh; left: 75vw; }
+#star26 { top: 51vh; left: 93vw; }
+#star27 { top: 39vh; left: 28vw; }
+#star28 { top: 76vh; left: 74vw; }
+#star29 { top: 38vh; left: 33vw; }
+#star30 { top: 9vh; left: 94vw; }
+#star31 { top: 15vh; left: 47vw; }
+#star32 { top: 16vh; left: 90vw; }
+#star33 { top: 28vh; left: 77vw; }
+#star34 { top: 11vh; left: 62vw; }
+#star35 { top: 63vh; left: 51vw; }
+#star36 { top: 34vh; left: 44vw; }
+#star37 { top: 47vh; left: 90vw; }
+#star38 { top: 72vh; left: 67vw; }
+#star39 { top: 13vh; left: 36vw; }
+#star40 { top: 10vh; left: 44vw; }
+#star41 { top: 50vh; left: 55vw; }
+#star42 { top: 45vh; left: 81vw; }
+#star43 { top: 75vh; left: 41vw; }
+#star44 { top: 2vh; left: 29vw; }
+#star45 { top: 93vh; left: 87vw; }
+#star46 { top: 24vh; left: 15vw; }
+#star47 { top: 49vh; left: 68vw; }
+#star48 { top: 51vh; left: 49vw; }
+#star49 { top: 51vh; left: 70vw; }
+#star50 { top: 52vh; left: 46vw; }
+#star51 { top: 97vh; left: 30vw; }
+#star52 { top: 72vh; left: 73vw; }
+#star53 { top: 25vh; left: 37vw; }
+#star54 { top: 53vh; left: 40vw; }
+#star55 { top: 69vh; left: 84vw; }
+#star56 { top: 70vh; left: 26vw; }
+#star57 { top: 97vh; left: 84vw; }
+#star58 { top: 22vh; left: 96vw; }
+#star59 { top: 77vh; left: 67vw; }
+#star60 { top: 97vh; left: 51vw; }
 
     .star::after {
         content: attr(title);
