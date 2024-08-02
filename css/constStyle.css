@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    background: black;
+    overflow: hidden;
+    color: white;
+}
+
+.constellation {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: url('small-stars.png') repeat; /* Smaller stars as background */
+}
+
+.lines {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none; /* Prevent lines from interfering with star clicks */
+}
+
+.star {
+    position: absolute;
+    width: 1vw;
+    height: 1vw;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 0 10px white;
+    cursor: pointer;
+}
+
+/* Updated positions to match the Berserk sacrifice mark precisely */
+#star1 { top: 9vh; left: 49.5vw; }  /* Top center */
+#star2 { top: 29vh; left: 41.5vw; }  /* Upper left */
+#star3 { top: 29vh; left: 57.5vw; }  /* Upper right */
+#star4 { top: 16vh; left: 54.5vw; }  /* Center */
+#star5 { top: 64vh; left: 41.5vw; }  /* Lower left */
+#star6 { top: 64vh; left: 57.5vw; }  /* Lower right */
+#star7 { top: 79vh; left: 49.5vw; }  /* Bottom center */
+#star8 { top: 16vh; left: 44.5vw; }  /* Bottom center */
+
+.star::after {
+    content: attr(title);
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+    white-space: nowrap;
+}
+
+.star1::after{
+    top: -120% !important;
+}
